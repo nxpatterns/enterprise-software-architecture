@@ -1,6 +1,7 @@
 \documentclass{article}
 
 % Packages
+\usepackage{geometry}
 \usepackage[bottom]{footmisc}
 \usepackage{caption}
 \usepackage{dot2texi}
@@ -65,6 +66,7 @@
 \makeatother
 
 % Hyperref setup
+\urlstyle{same}  % Use the same font as the rest of the text
 \hypersetup{
     colorlinks=true,
     linkcolor=linkcolor,
@@ -74,7 +76,7 @@
     allbordercolors=linkcolor
 }
 \let\oldhref\href
-\renewcommand{\href}[2]{\oldhref{#1}{\textcolor{linkcolor}{\textbf{#2}}}}
+\renewcommand{\href}[2]{\oldhref{#1}{\rmfamily\textcolor{linkcolor}{\textbf{#2}}}}
 
 % Quote environment
 \newenvironment{myquote}{%
@@ -125,6 +127,10 @@
 \title{$title$}
 \author{$author$}
 \date{$date$}
+
+% Footnote spacing configuration
+\setlength{\footnotesep}{20pt}        % Space between footnotes
+\addtolength{\skip\footins}{10pt}     % Space between text and footnote area
 
 % Document start
 \begin{document}
