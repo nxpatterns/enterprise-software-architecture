@@ -11,4 +11,4 @@ pandoc articles/Nest.js/Quick-Start-Nx-Angular/ReadMe.md \
   --number-sections \
   -f markdown+emoji+pipe_tables+raw_html \
   --shift-heading-level-by=-1 \
-  -o articles/Nest.js/Quick-Start-Nx-Angular/Quick-Start-Nx-Angular-Nest-v0.0.2.pdf
+  -o articles/Nest.js/Quick-Start-Nx-Angular/pdf/Quick-Start-Nx-Angular-Nest-v0.0.3.pdf
