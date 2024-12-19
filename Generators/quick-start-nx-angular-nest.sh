@@ -1,4 +1,4 @@
-pandoc Articles/Nest.js/Quick-Start-Nx-Angular/ReadMe.md \
+pandoc articles/Nest.js/Quick-Start-Nx-Angular/ReadMe.md \
   --template=pandoc/template.tex \
   --metadata-file=pandoc/metadata.yaml \
   --filter mermaid-filter \
@@ -11,4 +11,4 @@ pandoc Articles/Nest.js/Quick-Start-Nx-Angular/ReadMe.md \
   --number-sections \
   -f markdown+emoji+pipe_tables+raw_html \
   --shift-heading-level-by=-1 \
-  -o Articles/Nest.js/Quick-Start-Nx-Angular/Quick-Start-Nx-Angular-Nest.pdf
+  -o articles/Nest.js/Quick-Start-Nx-Angular/Quick-Start-Nx-Angular-Nest.pdf
