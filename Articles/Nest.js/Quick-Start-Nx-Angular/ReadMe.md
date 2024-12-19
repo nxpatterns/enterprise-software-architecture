@@ -74,6 +74,16 @@ I realise I might be turning this quick start guide into a doctoral thesis. But 
 
 And thus, we have discussed two Apostles of our Holy Trinity. But what of the third one? What divine powers does Nx bring to our enterprise salvation?
 
+#### From Angular to Nest.js: Same But Different
+
+When transitioning **from Angular to Nest.js**, you'll notice several similarities. **Both** frameworks are built on **TypeScript**, and both use **decorators** to define classes and methods.
+
+The module system in Nest.js will feel familiar to Angular developers, though with some key differences. Controllers in Nest.js might remind you of the old Angular.js days, and while they serve a similar routing and request handling purpose as Angular components, they're fundamentally different. Think of them as the entry points for your HTTP requests rather than UI elements.
+
+Currently, Nest.js doesn't have an equivalent to Angular's standalone components - though who knows what Kamil (Nest.js creator) has planned for the future.
+
+While these architectural parallels appear complex at first, we'll explore all these details hands-on as we create a Nest.js application within our Nx monorepo. After all, learning by doing is the best approach.
+
 ### Nx: The Holy Spirit of Enterprise Scalability
 
 I've been using Nx since its inception[^fistUseNx]. When we want to create enterprise workspaces that offer a proven schema from day one (and through my own enhancements, provide infinite scalability and true re-usability - more on that later), Nx is ideal.
