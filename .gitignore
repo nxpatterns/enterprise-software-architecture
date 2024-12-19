@@ -1,4 +1,24 @@
+# System Files
+.DS_Store
+Thumbs.db
 
+# Mermaid Filter Error File
 mermaid-filter.err
-Articles/.DS_Store
-Articles/Nest.js/.DS_Store
+
+# compiled output
+dist
+tmp
+/out-tsc
+
+# dependencies
+node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
