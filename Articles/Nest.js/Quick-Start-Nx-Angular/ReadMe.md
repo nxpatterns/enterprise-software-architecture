@@ -40,6 +40,16 @@ When **deploying Angular and NestJS**, I prefer using two different domains with
 
 This middleware is only accessible by authorized frontends that possess valid tokens (more on that later). *I've even offered some CTOs to personally sponsor these €12 per year - though that suggestion wasn't particularly well-received.*
 
+#### Making Backend Developers Question Their Life Choices
+
+Nest.js stands as a comprehensive backend framework capable of replacing most conventional backend solutions. While its TypeScript foundations might raise eyebrows among traditional backend developers[^realBackendProgrammingLanguage], its capabilities are undeniable.
+
+[^realBackendProgrammingLanguage]: The debate around "proper" backend languages often sees JavaScript/TypeScript facing skepticism from developers who favor languages like Go, Rust, Java, or C. Interestingly, even Python, despite its AI dominance, hasn't fully established itself in traditional backend development. While frameworks like Django (currently the de facto standard), Flask, CherryPy, and TurboGears have made notable attempts, Python's backend adoption remains primarily in specialized domains like data science and machine learning. Its widespread backend adoption would likely require significant hardware optimizations at the processor level.
+
+This is precisely why we present **Nest.js** to **"traditional" backend developers** as an intermediate layer between our frontend and the **"core" backend**. This approach excels in scenarios requiring data modeling, internationalization, and modernized business logic handling.
+
+While Nest.js often proves indispensable in projects dealing with historically (and sometimes hysterically) evolved data structures, positioning it as a middleware layer not only makes tactical sense but frequently becomes **a technical necessity**.
+
 #### Why not use Angular Server Rendering?
 
 The legitimate question "Why not use Angular Server Rendering?" deserves an answer: As Software Architects, we need to thoroughly field and battle-test "Angular Server Rendering."
@@ -100,7 +110,15 @@ For detailed technical reference and implementation guidance, consult the compre
 
 #### Cross-Framework Library Re-Usability
 
-If you wish to pursue a more academic approach, you can achieve cross-framework library compatibility when any of these conditions are met (Note: In our holy ELVIS, Core Logic could also reside in NestJS, though NestJS isn't mandatory for any app within ELVIS):
+When introducing Nx with Angular, we occasionally encounter raised eyebrows. React developers - as previously mentioned - often inquire about Angular libraries' compatibility with React. The answer is an unequivocal "yes."
+
+Beyond this documentation repository, I plan to establish an ELVIS repository that will evolve step-by-step into an enterprise-ready Nx monorepo workspace. Detailed examples will follow as we progress through:
+
+- Starting with a bare Nx framework
+- Integrating Angular and Nest.js
+- Developing our reusable libraries
+
+For those eager to dive in, let's clarify the path to **cross-framework harmony**. You can achieve cross-framework library compatibility when any of these conditions are met.
 
 - Core logic in TypeScript without framework dependencies
 - Thin framework-specific wrappers for Angular, React, or others
