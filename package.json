@@ -1,0 +1,26 @@
+{
+  "author": "@ebuelbuel",
+  "bugs": {
+    "url": "https://github.com/webia1/enterprise-software-architecture/issues"
+  },
+  "description": "coming soon",
+  "homepage": "https://github.com/webia1/enterprise-software-architecture#readme",
+  "keywords": [
+    "enterprise",
+    "software",
+    "architecture",
+    "documentation"
+  ],
+  "license": "SEE LICENSE IN <coming-soon>",
+  "main": "ReadMe.md",
+  "name": "enterprise-software-architecture-docs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webia1/enterprise-software-architecture.git"
+  },
+  "scripts": {
+    "generate:pdf:quick-start-nx-angular-nest": "sh Generators/quick-start-nx-angular-nest.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
+}

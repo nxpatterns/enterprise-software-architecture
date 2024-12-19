@@ -1,6 +1,6 @@
 # Enterprise Software Architecture
 
-## About
+## About the Author
 
 For industry insiders, I need no introduction - I'm a seasoned Software Architect with two decades of **battle scars and success stories**. For those wondering what exactly a Software Architect is, here's my perspective:
 

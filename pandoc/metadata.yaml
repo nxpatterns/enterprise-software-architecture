@@ -1,0 +1,17 @@
+---
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 5
+    highlight: kate
+    keep_tex: true
+    pdf_engine: lualatex
+    number_sections: true
+geometry:
+  - a4paper
+  - left=2.5cm
+  - top=2cm
+  - right=1.7cm
+  - bottom=2.5cm
+---
+

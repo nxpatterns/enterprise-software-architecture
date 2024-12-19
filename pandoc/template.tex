@@ -1,0 +1,137 @@
+\documentclass{article}
+
+% Packages
+\usepackage[bottom]{footmisc}
+\usepackage{caption}
+\usepackage{dot2texi}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage{fontspec}
+\usepackage{footnotebackref}
+\usepackage{fvextra}
+\usepackage{graphviz}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage{mdframed}
+\usepackage{newunicodechar}
+\usepackage{parskip}
+\usepackage{pifont}
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{twemojis}
+\usepackage{upquote}
+\usepackage{xcolor}
+\usepackage{zref-abspage}
+
+% Document setup
+\setcounter{secnumdepth}{7}
+\setcounter{tocdepth}{7}
+
+% TikZ setup
+\usetikzlibrary{shapes,arrows}
+\setmonofont{JetBrains Mono}
+\newunicodechar{✔}{\ding{51}}
+
+% Title spacing
+\titlespacing*{\section}{0pt}{12pt}{12pt}
+\titlespacing*{\subsection}{0pt}{12pt}{12pt}
+\titlespacing*{\subsubsection}{0pt}{12pt}{12pt}
+\titlespacing*{\paragraph}{0pt}{12pt}{12pt}
+\titlespacing*{\subparagraph}{0pt}{12pt}{12pt}
+
+% Colors
+\definecolor{lightbackground}{HTML}{edf6ff}
+\definecolor{darkbackground}{HTML}{189cff}
+\definecolor{codecolor}{HTML}{0d6ea4}
+\definecolor{linenumbercolor}{HTML}{6aaae4}
+\definecolor{linkcolor}{HTML}{07406E}
+\definecolor{quotebackground}{HTML}{f2f9ff}
+
+% Code highlighting setup
+\makeatletter
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+    commandchars=\\\{\},
+    breaklines=true,
+    breakanywhere=true,
+    numbers=left,
+    numbersep=5pt,
+    frame=none,
+    xleftmargin=2em,
+    formatcom=\color{codecolor}     
+}
+\renewcommand{\theFancyVerbLine}{\textcolor{linenumbercolor}{\footnotesize\arabic{FancyVerbLine}}}
+\addtolength{\topsep}{2em}
+\makeatother
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=linkcolor,
+    allbordercolors=linkcolor
+}
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\textcolor{linkcolor}{\textbf{#2}}}}
+
+% Quote environment
+\newenvironment{myquote}{%
+  \vspace{16pt}%
+  \begin{mdframed}[backgroundcolor=quotebackground,leftmargin=0.5cm,linewidth=4pt,leftline=true,rightline=false,topline=false,bottomline=false,linecolor=darkbackground]%
+  \bfseries}
+{\end{mdframed}\vspace{16pt}}
+\renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
+
+
+% List setup
+\setlistdepth{7}
+\renewlist{itemize}{itemize}{7}
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=\normalfont\bfseries\textendash}
+\setlist[itemize,3]{label=\textasteriskcentered}
+\setlist[itemize,4]{label=\textperiodcentered}
+\setlist[itemize,5]{label=\textendash}
+\setlist[itemize,6]{label=\textbullet}
+\setlist[itemize,7]{label=\textasteriskcentered}
+
+\makeatletter
+\renewcommand{\labelitemi}{---}
+\AtBeginDocument{
+    \setlist[itemize,enumerate]{
+        topsep=0.5em,    % Space before and after the list
+    }
+}
+\providecommand{\tightlist}{
+  \setlength{\itemsep}{0.25em}   % Space between items
+  \setlength{\parskip}{0.25em}   % Paragraph spacing within items
+}
+\makeatother
+
+% Emoji setup
+\directlua{luaotfload.add_fallback
+  ("emojifallback",
+    {
+      "NotoColorEmoji:mode=harf;"
+    }
+  )}
+
+\setmainfont{Latin Modern Roman}[
+  RawFeature={fallback=emojifallback}
+]
+
+% Setup Frontmatter
+\title{$title$}
+\author{$author$}
+\date{$date$}
+
+% Document start
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+
+$body$
+
+\end{document}
