@@ -39,6 +39,8 @@ Personally, I always use NestJS as a form of **"Separation of Concerns"**. I sim
 
 When **deploying Angular and NestJS**, I prefer using two different domains within the same cluster. If that's not feasible (your accountant-turned-CTO might think it's expensive at €12 per year), I'll use subdomains instead.
 
+Under no circumstances would I advocate for hosting everything on the same domain with different ports (unless, of course, I'm developing locally on my own machine). This distinction is crucial, and I'd be delighted to elaborate on its importance at a later time.
+
 This middleware is only accessible by authorized frontends that possess valid tokens (more on that later). *I've even offered some CTOs to personally sponsor these €12 per year - though that suggestion wasn't particularly well-received.*
 
 #### Making Backend Developers Question Their Life Choices
