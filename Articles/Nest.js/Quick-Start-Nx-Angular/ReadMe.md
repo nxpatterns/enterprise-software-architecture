@@ -153,9 +153,9 @@ This documentation is primarily designed for Angular experts[^motivators] seekin
 
 #### Pre-Requisites
 
-##### IDE (Integrated Development Environment)
+##### VSCode  
 
-We will use VSCode as IDE. If you don't have it installed, download it from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+We will use VSCode as IDE (Integrated Development Environment). If you don't have it installed, download it from [https://code.visualstudio.com/](https://code.visualstudio.com/).
 
 ##### Node.js
 
