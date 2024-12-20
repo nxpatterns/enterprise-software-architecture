@@ -1,7 +1,8 @@
 ---
-title: "Quick Start: Nx, Angular & Nest.js"
+title: "Nest.js for Angular Developers"
+subtitle: "A Quick Start - Withing an Nx Workspace"
 author: "@ebuelbuel"
-date: "2024-12-19 | started"
+date: "2024-12-20 | proceeding"
 ---
 
 ## The Holy Trinity of Enterprise Development

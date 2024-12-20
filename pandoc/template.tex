@@ -223,10 +223,22 @@
   }
 % END RECOMMENDATION
 
+
+% Setup Subtitle
+\providecommand{\subtitle}[1]{% 
+\usepackage{titling}
+\posttitle{%
+\par\large#1\end{center}}
+}
+
 % Setup Frontmatter
-\title{$title$}
-\author{$author$}
+\title{\huge $title$}
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
+\author{$author$\vspace{-1em}}
 \date{$date$}
+
 
 % Footnote spacing configuration
 \setlength{\footnotesep}{20pt}        % Space between footnotes
