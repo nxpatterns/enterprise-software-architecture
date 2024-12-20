@@ -19,7 +19,7 @@ Speaking of frontends; **What could possibly outshine Angular?** Especially when
 
 ### NestJS: Modernizing Legacy Data Without Breaking Faith
 
-Now that we've settled the frontend question, what about the dreadful data that has evolved organically over years?
+> Now that we've settled the frontend question, what about the dreadful data that has evolved organically over years?
 
 If Murphy's Law applies (and it always does), you might find database tables and columns in Low German dialect, leaving international team members completely lost - or as we say in German, they "understand only train station" (*"verstehen nur Bahnhof"* - an idiom for understanding absolutely nothing). Even as a native German speaker, I sometimes feel lost too - Low German can be as cryptic as hieroglyphics.
 
