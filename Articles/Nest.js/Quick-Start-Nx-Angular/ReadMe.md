@@ -1,6 +1,6 @@
 ---
 title: "Nest.js for Angular Developers"
-subtitle: "A Quick Start - Withing an Nx Workspace"
+subtitle: "A Quick Start - Within an Nx Workspace"
 author: "@ebuelbuel"
 date: "2024-12-20 | proceeding"
 ---
