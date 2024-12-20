@@ -72,7 +72,9 @@ While these architectural parallels appear complex at first, we'll explore all t
 
 **How does one properly field and battle-test?**
 
-Simple: Rent a cloud server from Hetzner, create an app with Angular Server-Side Rendering (without a firewall), then post on Reddit or the dark web claiming, "*I've built the most secure frontend web app - who dares to challenge it?*"
+Simple: Rent a cloud server from Hetzner[^hetzner], create an app with Angular Server-Side Rendering (without a firewall), then post on Reddit or the dark web claiming, "*I've built the most secure frontend web app - who dares to challenge it?*"
+
+[^hetzner]: [Hetzner.com](https://www.hetzner.com/) is a German cloud provider known for its affordable prices and reliable services. It's a popular choice among European developers and it is also my preferred choice - they're an environmentally conscious company where I train my models cost-effectively. **Full disclosure:** I have no business relationship with Hetzner and am not affiliated with them.
 
 If it survives six months without firewalls (but with OS updates), it might be production-ready.
 
@@ -137,3 +139,35 @@ For those eager to dive in, let's clarify the path to **cross-framework harmony*
 - Common utility functions and services
 
 And I've developed a sixth approach: a special kind of Proxy Pattern. Not the traditional OOP (Object-Oriented Programming) proxy, but rather a translator between apps that makes the whole interaction transparent and straightforward (more on this later).
+
+## Setup Your Nx Workspace
+
+This documentation is primarily designed for Angular experts[^motivators] seeking a fast-track introduction to the NestJS ecosystem.
+
+[^motivators]: This chapter is dedicated to [@DanielGlejzner](https://x.com/DanielGlejzner) and [@Armandotrue](https://x.com/Armandotrue), two talented young colleagues who tirelessly share their Angular expertise with the community.
+
+### Create a New Nx Workspace
+
+#### Pre-Requisites
+
+##### IDE (Integrated Development Environment)
+
+We will use VSCode as IDE. If you don't have it installed, download it from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+
+##### Node.js
+
+Ensure you have Node.js installed. If not, download it from [https://nodejs.org/](https://nodejs.org/). Use always the last LTS (Long Term Supported) version.
+
+\begin{recommendation}
+For macOS or linux users, I recommend using \texttt{n} as your Node.js version manager. Install it globally via:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+npm install -g n
+\end{Highlighting}
+\end{Shaded}
+
+\texttt{n} provides seamless Node.js version management with minimal overhead. For comprehensive documentation and usage examples, refer to the official repository: \href{https://github.com/tj/n}{github.com/tj/n}
+\end{recommendation}
+
+### When Angular Met Nest.js: A Developer's Love Story

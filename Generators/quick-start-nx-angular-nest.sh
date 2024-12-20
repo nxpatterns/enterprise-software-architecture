@@ -9,6 +9,6 @@ pandoc articles/Nest.js/Quick-Start-Nx-Angular/ReadMe.md \
   --toc-depth=6 \
   --highlight=kate \
   --number-sections \
-  -f markdown+emoji+pipe_tables+raw_html \
+  -f markdown+emoji+pipe_tables+raw_html+fenced_divs \
   --shift-heading-level-by=-1 \
-  -o articles/Nest.js/Quick-Start-Nx-Angular/pdf/Quick-Start-Nx-Angular-Nest-v0.0.5.pdf
+  -o articles/Nest.js/Quick-Start-Nx-Angular/pdf/Quick-Start-Nx-Angular-Nest-v0.0.8.pdf
