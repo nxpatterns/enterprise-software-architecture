@@ -39,7 +39,6 @@
 
 % TikZ setup
 \usetikzlibrary{shapes,arrows}
-\setmonofont{JetBrains Mono}
 \newunicodechar{✔}{\ding{51}}
 
 % Title spacing
@@ -56,6 +55,12 @@
 \definecolor{linenumbercolor}{HTML}{6aaae4}
 \definecolor{linkcolor}{HTML}{07406E}
 \definecolor{quotebackground}{HTML}{f2f9ff}
+
+% Monofont setup
+\setmonofont{JetBrains Mono}[
+ Scale=0.9,
+ Color={codecolor} 
+]
 
 % Code highlighting setup
 \makeatletter
@@ -95,6 +100,43 @@
 \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
 
 
+% Paragraph and subparagraph styles
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {-3.25ex\@plus -1ex \@minus -.2ex}%
+  {1.5ex \@plus .2ex}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\z@}%
+  {-3.25ex\@plus -1ex \@minus -.2ex}%
+  {1.5ex \@plus .2ex}%
+  {\normalfont\normalsize\bfseries}}
+\newcounter{subsubparagraph}[subparagraph]
+\renewcommand\thesubsubparagraph{%
+  \thesubparagraph.\@arabic\c@subsubparagraph}
+\newcommand\subsubparagraph{%
+  \@startsection{subsubparagraph}{6}{\z@}%
+  {-3.25ex\@plus -1ex \@minus -.2ex}%
+  {1.5ex \@plus .2ex}%
+  {\normalfont\normalsize\bfseries}}
+\newcommand\l@subsubparagraph{\@dottedtocline{6}{10em}{5em}}
+\makeatother
+
+% Footnote spacing configuration
+\setlength{\footnotesep}{20pt}        % Space between footnotes
+\addtolength{\skip\footins}{10pt}     % Space between text and footnote area
+
+% Emoji setup
+\directlua{luaotfload.add_fallback
+  ("emojifallback",
+    {
+      "NotoColorEmoji:mode=harf;"
+    }
+  )}
+
+\setmainfont{Latin Modern Roman}[
+  RawFeature={fallback=emojifallback}
+]
+
 % List setup
 \setlistdepth{7}
 \renewlist{itemize}{itemize}{7}
@@ -118,18 +160,6 @@
   \setlength{\parskip}{0.25em}   % Paragraph spacing within items
 }
 \makeatother
-
-% Emoji setup
-\directlua{luaotfload.add_fallback
-  ("emojifallback",
-    {
-      "NotoColorEmoji:mode=harf;"
-    }
-  )}
-
-\setmainfont{Latin Modern Roman}[
-  RawFeature={fallback=emojifallback}
-]
 
 % Pandoc syntax highlighting tokens
 \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
@@ -170,9 +200,7 @@
 {\begin{snugshade}}
 {\end{snugshade}}
 
-% Assets Folder
-\newcommand{\assetpath}{assets}
-\graphicspath{{\assetpath/}}
+
 
 % START RECOMMENDATION
 % Custom environments
@@ -240,9 +268,7 @@ $endif$
 \date{\vspace{-0.75cm}$date$}
 
 
-% Footnote spacing configuration
-\setlength{\footnotesep}{20pt}        % Space between footnotes
-\addtolength{\skip\footins}{10pt}     % Space between text and footnote area
+
 
 % Document start
 \begin{document}

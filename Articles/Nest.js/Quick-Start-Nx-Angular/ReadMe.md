@@ -5,6 +5,41 @@ author: "@ebuelbuel"
 date: "2024-12-20 | proceeding"
 ---
 
+**To export any ReadMe.md in a professionell publishing quality to a PDF:**
+
+- Install pandoc on your machine.
+  - [Pandoc Installation](https://pandoc.org/installing.html)
+- Install a LaTeX Engine on your machine.
+  - [e.g. TeX Live](https://tug.org/texlive/) (Important: Full Version)
+  - MacOS Download here: [MacTeX](https://tug.org/mactex/)
+- Download & Install Fonts
+  - [JetBrains Mono Font](https://www.jetbrains.com/lp/mono/)
+  - [Noto Color Emoji Font](https://github.com/googlefonts/noto-emoji/releases)
+- Install Mermaid Filter Globally
+  - `npm install -g mermaid-filter`
+- Change to the directory containing ReadMe.md and use the following command [^longnote]:
+
+[^longnote]: This command ensures that chapters are correctly numbered and the table of contents is properly generated. Additionally, professional formatting templates are applied, which are defined in the frontmatter of this document. The Architect's recommendation is MacOS, Linux, or WSL on Windows. Missing packages can be installed using **`tlmgr`**; you can find [more details about this here](https://github.com/webia1/Frontend-Ecosystem/blob/main/Pandoc/ReadMd.md)
+
+```bash
+pandoc ReadMe.md \
+  --filter mermaid-filter \
+  --pdf-engine=lualatex \
+  --pdf-engine-opt=-shell-escape \
+  --lua-filter=graphviz.lua \
+  --toc=true \
+  --toc-depth=5 \
+  --highlight=kate \
+  --number-sections \
+  -f markdown+emoji+pipe_tables+raw_html \
+  --shift-heading-level-by=-1 \
+  -s -o ReadMe-v0.0.1.pdf # Change the version number accordingly
+```
+
+Emoji Support: 💣 👀 😇 🤭 💡 ✅ 🏆 💥 ⚠️ 🧨 🎯 🚫 🔑 🚀 🔥
+
+\clearpage
+
 ## The Holy Trinity of Enterprise Development
 
 Having worked in enterprise software architecture, **you'll often encounter data structures that reflect their historical evolution** - shaped by numerous stakeholders, each contributing their unique terminology.
@@ -156,6 +191,39 @@ This documentation is primarily designed for Angular experts[^motivators] seekin
 ##### VSCode  
 
 We will use VSCode as IDE (Integrated Development Environment). If you don't have it installed, download it from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+
+###### Register `code` command in PATH
+
+After the installation is one important thing to do: "Register `code` command in PATH". Open the command palette (`Ctrl+Shift+P`), macOS (`⇧ ⌘ P`) and type:
+
+`Shell Command: Install 'code' command in PATH`
+
+and press Enter.
+
+Then restart your shell (or terminal) and type `code --version` and exetute it. You should see something like `1.96.2` or higher.
+
+###### Install Extensions
+
+Please install these recommended extensions (we will need them); the easiest way is to copy this list into the "recommendations" section of the workspace `.vscode/extensions.json` file.
+
+Then, completely close and restart VSCode. A notification will appear at the bottom right corner (the place may change in other versions), indicating that recommended extensions can be installed.
+
+And please install them all. (If the folder or file doesn't exist, create it: `.vscode/extensions.json`)
+
+```json
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "mrmlnc.vscode-scss",
+    "nrwl.angular-console",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
+    "shd101wyy.markdown-preview-enhanced",   
+  ]
+}  
+```
 
 ##### Node.js
 

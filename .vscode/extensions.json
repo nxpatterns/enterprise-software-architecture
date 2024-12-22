@@ -1,0 +1,29 @@
+{
+  "recommendations": [
+    "Andreabbondanza.ignoregit",
+    "Angular.ng-template",
+    "cyrilletuzi.angular-schematics",
+    "DavidAnson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "firsttris.vscode-jest-runner",
+    "formulahendry.auto-close-tag",
+    "johnpapa.Angular2",
+    "mrmlnc.vscode-scss",
+    "naumovs.color-highlight",
+    "nguyenngoclong.terminal-keeper",
+    "nidu.copy-json-path",
+    "nikhilgoud.ngx-translate-utils",
+    "nrwl.angular-console",
+    "oliversturm.fix-json",
+    "PKief.material-icon-theme",
+    "q.typescript-mono-repo-import-helper",
+    "quicktype.quicktype",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
+    "shd101wyy.markdown-preview-enhanced",
+    "steoates.autoimport",
+    "tomoki1207.pdf"
+  ]
+}
