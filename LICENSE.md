@@ -1,11 +1,17 @@
-© [x.com/EBuelbuel](https://x.com/EBuelbuel) - 2024
+# Licence
 
-**This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.** To view a copy of this license, visit: [creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
+![x.com/nxpatterns](assets/svg/pp-sw-smoothie.svg){width=100px}
+
+*©* [**x.com/nxpatterns**](https://x.com/nxpatterns) - **2025**
+
+**This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.**
+
+To view a copy of this license, visit: [creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
 
 **Additional Terms:**
 
 - You are free to share and adapt this work by giving appropriate credit but you may NOT sell, resell, or commercially distribute this document itself.
-- To use this document in commercial training materials or paid content, just tag (@ebuelbuel) on X-Platform and state your intended use. Permission will be granted immediately.
+- To use this document in commercial training materials or paid content, just tag (**`@nxpatterns`**) on X-Platform and state your intended use. Permission will be granted immediately.
 
 **Disclaimer and Professional Notice**
 
@@ -45,3 +51,5 @@ The concepts, architectures, and implementations described in this documentation
 - Security best practices
 - DevOps and CI/CD processes
 - Azure, AWS, Google Cloud, Hetzner Cloud, or other cloud platforms
+
+All trademarks, logos, brand names, and product names mentioned in this document are the property of their respective owners. This includes but is not limited to Angular, Nx, Nest.js, TypeScript, and Node.js. This document is for educational purposes only. Any references to protected intellectual property are made under fair use for the purpose of technical documentation and training. The author makes no claim to ownership of any third-party intellectual property referenced herein. All rights remain with their respective owners.
