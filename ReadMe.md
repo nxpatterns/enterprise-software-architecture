@@ -38,4 +38,4 @@ Until now, I've shared my knowledge **exclusively with Fortune 500 companies** w
 
 **Me, just one of you** - *not necessarily better, but perhaps more battle-tested*.
 
-p.s. I can take punches and throw them too, but don't worry - there's a heart of gold beneath all that tough love. ;)
+*p.s. I can take punches and throw them too, but don't worry - there's a heart of gold beneath all that tough love.* ;)
