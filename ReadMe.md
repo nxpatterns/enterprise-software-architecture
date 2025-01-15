@@ -10,6 +10,8 @@ Hence, we're kicking off with a rather fascinating topic: **"NestJS for Angular 
 
 Should anyone fancy diving into Angular at this juncture, our distinguished colleague [Manfred](https://x.com/ManfredSteyer) would be surely delighted to help. [Daniel](https://x.com/DanielGlejzner) curates a rather splendid [Angular Space](https://x.com/i/communities/1726237719762714636), and I've taken the liberty of compiling a list of other brilliant Angular experts (Arman, Enea, Minko, Thomas,..), which you can peruse here: [Angular Experts](https://x.com/i/lists/1869382100476149875/members).
 
+And one more thing: This is the documentation project. You'll find Elvis here: [github.com/webia1/elvis](https://github.com/webia1/elvis). The Elvis project is in active development. Individual branches serve as checkpoints in our journey. More details on this here: [NestJS for Angular Developers](articles/Nest.js/Quick-Start-Nx-Angular/pdf)
+
 **Updates shall be forthcoming, cross my heart and hope to fly!**
 
 ## About the Author
