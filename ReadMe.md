@@ -1,5 +1,17 @@
 # Enterprise Software Architecture
 
+We affectionately call it **`Elvis`** - a fresh take on **`Nx workspaces`**, standing for:
+
+ **`E`**`nterprise` **`L`**`evel` **`V`**`isionary` **`I`**`nnovation` **`S`**`tack`.
+
+Together, we shall embark on this grand adventure of building it piece by piece, culminating in the complete Elvis manuscript. I say, even **in these AI-driven times**, one mustn't forget the **paramount importance of data quality**: Rubbish in, rubbish out, as they say in the Queen's English.
+
+Hence, we're kicking off with a rather fascinating topic: **"NestJS for Angular Experts"**, where we'll employ **NestJS** as a **middleware solution** to modernise existing **enterprise data**. The impatient chaps among you may skip straight to this section: [NestJS for Angular Developers](articles/Nest.js/Quick-Start-Nx-Angular/pdf).
+
+Should anyone fancy diving into Angular at this juncture, our distinguished colleague [Manfred](https://x.com/ManfredSteyer) would be surely delighted to help. [Daniel](https://x.com/DanielGlejzner) curates a rather splendid [Angular Space](https://x.com/i/communities/1726237719762714636), and I've taken the liberty of compiling a list of other brilliant Angular experts (Arman, Enea, Minko, Thomas,..), which you can peruse here: [Angular Experts](https://x.com/i/lists/1869382100476149875/members).
+
+**Updates shall be forthcoming, cross my heart and hope to fly!**
+
 ## About the Author
 
 For industry insiders, I need no introduction - I'm a seasoned Software Architect with two decades of **battle scars and success stories**. For those wondering what exactly a Software Architect is, here's my perspective:
