@@ -28,7 +28,7 @@ Drawing a parallel to "Top Gun: Maverick" - like Tom Cruise's character, I could
 
 There's something **uniquely energizing** about collaborating with younger developers (perhaps due to a cognitive glitch that has me perpetually feeling 25). I'll keep my self-description brief - I'm here to share experiences and insights with you.
 
-**My goal** is to contribute meaningfully to your journey **in software development & arhitecture**. I've set out to gradually explore **various intriguing topics (particularly crucial in this AI era)** and, **barring any cosmic interventions**, this content **should grow continuously**.
+**My goal** is to contribute meaningfully to your journey **in software development & architecture**. I've set out to gradually explore **various intriguing topics (particularly crucial in this AI era)** and, **barring any cosmic interventions**, this content **should grow continuously**.
 
 But **you know how it goes with plans** - fate usually has a good laugh at them. Let's see how far this journey takes us.
 
